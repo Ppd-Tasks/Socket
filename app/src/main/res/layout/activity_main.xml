@@ -7,29 +7,16 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_connect"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="connect"/>
-    <LinearLayout
+        android:layout_gravity="center"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/btn_bitcoin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Bitcoin"
-            style="?android:attr/buttonBarButtonStyle" />
-        <Button
-            android:id="@+id/btn_usd"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="USD"
-            style="?android:attr/buttonBarButtonStyle" />
-    </LinearLayout>
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="15dp"/>
 
 </LinearLayout>

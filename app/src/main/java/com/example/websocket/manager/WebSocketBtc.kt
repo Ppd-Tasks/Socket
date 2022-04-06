@@ -22,13 +22,6 @@ class WebSocketBtc{
                 mWebSocket = webSocket
 
                 webSocket.send(gson.toJson(Currency("bts:subscribe",DataSend("live_trades_btcusd"))))
-
-                /*webSocket.send("{\n" +
-                        "    \"event\": \"bts:subscribe\",\n" +
-                        "    \"data\": {\n" +
-                        "        \"channel\": \"live_trades_btcusd\"\n" +
-                        "    }\n" +
-                        "}")*/
             }
 
             override fun onMessage(webSocket: WebSocket, text: String) {
